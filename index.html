@@ -10,6 +10,7 @@
 <meta name="keywords" content="barber reviews, find a barber, rate my barber, best barbers, barber near me, barbershop reviews, fade haircut, beard trim, barber ratings, Boston barbers, New York barbers, Atlanta barbers" />
 <meta name="author" content="Rate My Barber" />
 <meta name="robots" content="index, follow" />
+<meta name="google-site-verification" content="n3lrbbJv7m8LVqWmM0Nz0jddivpKd1n4EXEHz21-Ntk" />
 <link rel="canonical" href="https://www.ratemybarber.org/" />
 
 <!-- Open Graph (for sharing on Facebook, Instagram, iMessage etc) -->
@@ -300,7 +301,7 @@
     <div>© 2026 Rate My Barber · Built for the culture.</div>
     <div style="display:flex;gap:1.5rem;">
       <a onclick="showPage('privacy')" style="color:var(--muted);text-decoration:none;cursor:pointer;">Privacy Policy</a>
-      <a href="mailto:contact@ratemybarber.org" style="color:var(--muted);text-decoration:none;">Contact</a>
+      <a href="/cdn-cgi/l/email-protection#b2d1dddcc6d3d1c6f2c0d3c6d7dfcbd0d3c0d0d7c09cddc0d5" style="color:var(--muted);text-decoration:none;">Contact</a>
     </div>
   </footer>
 </div>
@@ -471,18 +472,18 @@
       <p style="margin-bottom:1rem;">We use Supabase for database storage. Data submitted to our site is stored on Supabase servers. Please review <a href="https://supabase.com/privacy" target="_blank" style="color:var(--warm-mid);">Supabase's Privacy Policy</a> for more information.</p>
 
       <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.75rem;margin-top:2rem;">Your Rights</h3>
-      <p style="margin-bottom:1rem;">If you would like to request removal of a review or barber listing you submitted, please contact us at <a href="mailto:contact@ratemybarber.org" style="color:var(--warm-mid);">contact@ratemybarber.org</a>.</p>
+      <p style="margin-bottom:1rem;">If you would like to request removal of a review or barber listing you submitted, please contact us at <a href="/cdn-cgi/l/email-protection#34575b5a405557407446554051594d5655465651461a5b4653" style="color:var(--warm-mid);"><span class="__cf_email__" data-cfemail="44272b2a302527300436253021293d2625362621366a2b3623">[email&#160;protected]</span></a>.</p>
 
       <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.75rem;margin-top:2rem;">Changes to This Policy</h3>
       <p style="margin-bottom:1rem;">We may update this privacy policy from time to time. We will notify users of any significant changes by updating the date at the top of this page.</p>
 
       <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.75rem;margin-top:2rem;">Contact Us</h3>
-      <p>If you have any questions about this privacy policy, please contact us at <a href="mailto:contact@ratemybarber.org" style="color:var(--warm-mid);">contact@ratemybarber.org</a>.</p>
+      <p>If you have any questions about this privacy policy, please contact us at <a href="/cdn-cgi/l/email-protection#ff9c90918b9e9c8bbf8d9e8b9a92869d9e8d9d9a8dd1908d98" style="color:var(--warm-mid);"><span class="__cf_email__" data-cfemail="462529283227253206342732232b3f24273424233468293421">[email&#160;protected]</span></a>.</p>
     </div>
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const SURL='https://jbmojxmxbvdvgtpbbdzm.supabase.co/rest/v1';
 const KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpibW9qeG14YnZkdmd0cGJiZHptIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU1MDE3MjEsImV4cCI6MjA5MTA3NzcyMX0.P24wmuuAJzu3nWo_FUOEPfLzHt_iHYDcRH0t_jtNizs';
 const H={'Content-Type':'application/json','apikey':KEY,'Authorization':'Bearer '+KEY};
@@ -893,18 +894,4 @@ async function submitBarber(){
     document.getElementById('new-barber-city').value='';
     document.getElementById('photo-file').value='';
     document.getElementById('photo-preview').style.display='none';
-    document.querySelector('.photo-upload-label').style.display='block';
-    selectedSpecs=[];
-    document.querySelectorAll('#spec-picker .filter-pill').forEach(p=>p.classList.remove('active'));
-    setTimeout(()=>showPage('home'),1500);
-  }catch(e){toast('Failed: '+e.message,'error');}
-  finally{btn.disabled=false;btn.textContent='Add Barber';}
-}
-
-window.addEventListener('DOMContentLoaded',function(){
-  populateStateDropdowns();
-  try{loadBarbers();}catch(e){console.error(e);}
-});
-</script>
-</body>
-</html>
+    document.querySelector('.photo-upload-label').style.display='bloc
