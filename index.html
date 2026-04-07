@@ -3,7 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rate My Barber</title>
+<title>Rate My Barber — Find & Rate Barbers Near You</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Rate My Barber is the community-powered platform to find, rate, and review barbers across the US. Read honest reviews, discover top-rated barbers in your city, and help others find their perfect cut." />
+<meta name="keywords" content="barber reviews, find a barber, rate my barber, best barbers, barber near me, barbershop reviews, fade haircut, beard trim, barber ratings, Boston barbers, New York barbers, Atlanta barbers" />
+<meta name="author" content="Rate My Barber" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.ratemybarber.org/" />
+
+<!-- Open Graph (for sharing on Facebook, Instagram, iMessage etc) -->
+<meta property="og:title" content="Rate My Barber — Find & Rate Barbers Near You" />
+<meta property="og:description" content="Real reviews from real clients. Find top-rated barbers in your city, read honest feedback, and book with confidence." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.ratemybarber.org/" />
+<meta property="og:site_name" content="Rate My Barber" />
+
+<!-- Twitter Card (for sharing on Twitter/X) -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Rate My Barber — Find & Rate Barbers Near You" />
+<meta name="twitter:description" content="Real reviews from real clients. Find top-rated barbers in your city and help others find their perfect cut." />
+<meta name="twitter:site" content="@ratemybarber" />
+
+<!-- Structured Data (helps Google understand your site) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Rate My Barber",
+  "url": "https://www.ratemybarber.org",
+  "description": "Community-powered platform to find, rate, and review barbers across the United States.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.ratemybarber.org/?search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -260,10 +297,10 @@
 
   <footer>
     <div class="footer-logo">Rate My <span>Barber</span></div>
-    <div>© 2025 Rate My Barber · Built for the culture.</div>
+    <div>© 2026 Rate My Barber · Built for the culture.</div>
     <div style="display:flex;gap:1.5rem;">
-      <a href="#" style="color:var(--muted);text-decoration:none;">About</a>
-      <a href="#" style="color:var(--muted);text-decoration:none;">Contact</a>
+      <a onclick="showPage('privacy')" style="color:var(--muted);text-decoration:none;cursor:pointer;">Privacy Policy</a>
+      <a href="mailto:contact@ratemybarber.org" style="color:var(--muted);text-decoration:none;">Contact</a>
     </div>
   </footer>
 </div>
@@ -404,6 +441,44 @@
       </div>
     </div>
     <button class="submit-btn" id="add-barber-btn" onclick="submitBarber()">Add Barber</button>
+  </div>
+</div>
+
+<!-- PRIVACY POLICY -->
+<div class="page" id="page-privacy">
+  <div style="max-width:800px;margin:0 auto;padding:3rem 5%;">
+    <button class="back-btn" onclick="showPage('home')">← Back</button>
+    <h2 style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;margin-bottom:0.5rem;">Privacy Policy</h2>
+    <p style="color:var(--muted);margin-bottom:2rem;font-size:0.875rem;">Last updated: April 2026</p>
+
+    <div style="font-size:0.95rem;line-height:1.8;color:var(--ink);">
+      <p style="margin-bottom:1.5rem;">Rate My Barber ("we", "us", or "our") operates ratemybarber.org. This page explains what information we collect and how we use it.</p>
+
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.75rem;margin-top:2rem;">Information We Collect</h3>
+      <p style="margin-bottom:1rem;">When you submit a review or add a barber, we collect the name you provide and the content of your review. We do not require you to create an account or provide an email address.</p>
+      <p style="margin-bottom:1rem;">We may automatically collect non-personal information such as browser type, pages visited, and time spent on the site through standard web analytics tools.</p>
+
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.75rem;margin-top:2rem;">How We Use Your Information</h3>
+      <p style="margin-bottom:1rem;">Information submitted through reviews and barber listings is displayed publicly on the site. We use anonymous analytics data to improve the website experience.</p>
+
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.75rem;margin-top:2rem;">Advertising</h3>
+      <p style="margin-bottom:1rem;">We may display advertisements served by Google AdSense. Google may use cookies to serve ads based on your prior visits to our website or other websites. You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" style="color:var(--warm-mid);">Google Ad Settings</a>.</p>
+
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.75rem;margin-top:2rem;">Cookies</h3>
+      <p style="margin-bottom:1rem;">Our site may use cookies for analytics and advertising purposes. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.</p>
+
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.75rem;margin-top:2rem;">Third-Party Services</h3>
+      <p style="margin-bottom:1rem;">We use Supabase for database storage. Data submitted to our site is stored on Supabase servers. Please review <a href="https://supabase.com/privacy" target="_blank" style="color:var(--warm-mid);">Supabase's Privacy Policy</a> for more information.</p>
+
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.75rem;margin-top:2rem;">Your Rights</h3>
+      <p style="margin-bottom:1rem;">If you would like to request removal of a review or barber listing you submitted, please contact us at <a href="mailto:contact@ratemybarber.org" style="color:var(--warm-mid);">contact@ratemybarber.org</a>.</p>
+
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.75rem;margin-top:2rem;">Changes to This Policy</h3>
+      <p style="margin-bottom:1rem;">We may update this privacy policy from time to time. We will notify users of any significant changes by updating the date at the top of this page.</p>
+
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;margin-bottom:0.75rem;margin-top:2rem;">Contact Us</h3>
+      <p>If you have any questions about this privacy policy, please contact us at <a href="mailto:contact@ratemybarber.org" style="color:var(--warm-mid);">contact@ratemybarber.org</a>.</p>
+    </div>
   </div>
 </div>
 
