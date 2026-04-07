@@ -894,4 +894,18 @@ async function submitBarber(){
     document.getElementById('new-barber-city').value='';
     document.getElementById('photo-file').value='';
     document.getElementById('photo-preview').style.display='none';
-    document.querySelector('.photo-upload-label').style.display='bloc
+    document.querySelector('.photo-upload-label').style.display='block';
+    selectedSpecs=[];
+    document.querySelectorAll('#spec-picker .filter-pill').forEach(p=>p.classList.remove('active'));
+    setTimeout(()=>showPage('home'),1500);
+  }catch(e){toast('Failed: '+e.message,'error');}
+  finally{btn.disabled=false;btn.textContent='Add Barber';}
+}
+
+window.addEventListener('DOMContentLoaded',function(){
+  populateStateDropdowns();
+  try{loadBarbers();}catch(e){console.error(e);}
+});
+</script>
+</body>
+</html>
